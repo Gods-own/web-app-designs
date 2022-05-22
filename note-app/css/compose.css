@@ -1,0 +1,40 @@
+.compose-form-div{
+    background-color: white;
+    padding: 0.8rem;
+}
+
+.compose-form input, .compose-form textarea {
+    width: 100%;
+    padding: 0.4rem;
+    outline: none;
+    border: 1px solid rgb(161, 157, 157);
+    border-radius: 5px;
+}
+
+.compose-form textarea {
+    min-height: 40vh;
+}
+
+.input-div{
+    margin-bottom: 1rem;
+}
+
+.compose-form button {
+    background-color: #6F84FF;
+    color: white;
+    padding: 0.4rem 1.5rem;
+    border-radius: 7px;
+}
+
+.compose-form-btn-div{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 543px) {
+
+}    
+
+@media screen and (min-width: 800px) {
+
+}

@@ -1,0 +1,26 @@
+.folder-flex-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    justify-content: space-between;
+}
+
+.folder-div {
+    text-align: center;
+    font-weight: bold;
+}
+
+.folder-div:hover{
+    background-color: #e8ebff;
+}
+
+.folder-div img{
+    width: 150px;
+}
+
+@media screen and (min-width: 543px) {
+
+}    
+
+@media screen and (min-width: 800px) {
+
+}

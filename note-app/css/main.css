@@ -1,0 +1,89 @@
+body{
+    background-color: #f7f4f4;
+}
+
+.note-list{
+    padding: 0;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem;
+}
+
+.note-list h3, .note-list p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.note-list button{
+    font-size: 1.3rem;
+    background-color: transparent;
+}
+
+.edit-btn, .delete-btn{
+    background-color: transparent;
+    font-size: 1.7rem;
+}
+
+.note-section-second {
+    line-height: 1.5rem;
+}
+
+.edit-btn{
+    color: green;
+}
+
+.delete-btn{
+    color: red;
+}
+
+.search-form {
+    margin-bottom: 1em;
+    padding: 0 0.4rem;
+}
+
+.search-form input {
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.4rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.note-view-body {
+    margin-top: 1.7rem;
+}
+
+@media screen and (min-width: 543px) {
+    .search-form {
+        width: 535px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}    
+
+@media screen and (min-width: 800px) {
+    main{
+        display: grid;
+        /* grid-template-columns: 680px 1fr; */
+        column-gap: 1rem;
+        grid-template-columns: 45% 1fr;
+        align-items: start;
+    }
+
+    .search-form {
+        width: 89%;
+    }
+    
+    .note-list {
+        /* width: 670px; */
+        /* width: 670px; */
+    }
+
+    .note-section-second{
+        background-color: white;
+        min-height: 90vh;
+        padding: 1rem;
+    }
+}
