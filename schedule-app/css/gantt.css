@@ -116,35 +116,36 @@
 }
 .chart-row-bars .chart-li-one {
     grid-row: 1/5; 
+    grid-column: 1/6;
     background-color:#588BAE;
 }
 .chart-row-bars .chart-li-two-a {
-    grid-row: 12/13; 
+    grid-row: 1/6; 
     background-color: #0080FF;
 }
 .chart-row-bars .chart-li-two-b {
-    grid-row: 2/5;  
+    grid-column: 2/4; 
     background-color:#4682B4;
 } 
 .chart-row-bars .chart-li-three {
-    grid-row: 4/6; 
+    grid-column: 1/2; 
     background-color:#57A0D3;
 }
 .chart-row-bars .chart-li-four {
-    grid-row: 7/8; 
+    grid-column: 1/5; 
     background-color:#0E4D92;
 }
 .chart-row-bars .chart-li-five {
-    grid-column: 2/3; 
+    grid-column: 2/6; 
     background-color:#4F97A3;
 }
 
 .chart-row-bars .chart-li-six {
-    grid-row: 4/5;  
+    grid-column: 2/6; 
     background-color:#4F97A3;
 }
 
 .chart-row-bars .chart-li-seven {
-    grid-row: 11/13;  
+    grid-column: 2/6; 
     background-color:#4F97A3;
 }
