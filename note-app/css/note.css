@@ -14,8 +14,9 @@
     line-height: 1.9rem;
 }
 
-.note-view-section h3 {
+.note-view-section h2{
     line-height: 2.1rem;
+    font-weight: 900;
 }
 
 .note-view-section::-webkit-scrollbar {

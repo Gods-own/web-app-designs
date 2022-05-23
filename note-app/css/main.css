@@ -95,6 +95,7 @@ nav ul li a{
 
 .note-section {
     padding: 4rem 1rem;
+    margin-top: 3.6rem;
 }
 
 .search-form {
@@ -125,6 +126,7 @@ nav ul li a{
 
 .note-div {
     display: grid;
+    margin-top: 2rem;
     /* background-color: green; */
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 1.3rem;

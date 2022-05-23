@@ -29,3 +29,14 @@
 .form-body-div, .form-btn-div {
     margin-top: 1.2rem;
 }
+
+.form-btn-div {
+    text-align: center;
+}
+
+.form-btn-div button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background: #DE6769;
+}

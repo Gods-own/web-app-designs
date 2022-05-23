@@ -6,76 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/folders.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 <body>
-    <nav>
-        <div class="navigation-div">
+    <main>
+        <header>
+            <div class="navigation-div">
 
-            <div class="note-brand">
-                <img class="logo-img" src="css/images/logo.png">
-                <p>Notes</p>
+                <div class="note-brand">
+                    <img class="logo-img" src="css/images/logo.png">
+                    <p>Notes</p>
+                </div>
+
+                <div class="user-header">
+                    <img class="profile-img" src="css/images/profile-3.jpg">
+                    <p>Amanda</p>
+                </div>
+
             </div>
-
-            <div>
-                <button>
-                    <i class="las la-bars"></i>
-                </button>
+        </header>
+        <section class="folders-section">
+            <div class="folder-flex-container">
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>
+                <div class="folder-div">
+                    <img src="css/images/folder-icon.png">
+                    <p>Thoughts</p>
+                </div>       
             </div>
-
-        </div>
-        <ul class="navigation-list">
-            <li><a href="compose.html">Create</a></li>
-            <li><a href="folders.html">Folders</a></li>
-            <li><a>Logout</a></li>
-        </ul>
-    </nav>
-    <div class="folder-flex-container">
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>
-        <div class="folder-div">
-            <img src="{{ asset('images/folder-icon.png') }}">
-            <p>Thoughts</p>
-        </div>       
-    </div>
+            
+        </section>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><i class="las la-home"></i></a>
+                </li>
+                <li>
+                    <a href="note.html"><i class="las la-sticky-note"></i></a>
+                </li>
+                <li>
+                    <a href="compose.html"><i class="las la-plus"></i></a>
+                </li>
+                <li>
+                    <a  href="folders.html"><i class="las la-folder-open"></i></a>
+                </li>
+                <li>
+                    <a><i class="las la-power-off"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </main>    
 </body>
 </html>
