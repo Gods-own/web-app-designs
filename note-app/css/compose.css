@@ -1,40 +1,31 @@
-.compose-form-div{
-    background-color: white;
-    padding: 0.8rem;
+.compose-form-div {
+    padding: 1rem 1.2rem;
+    margin: 6.7rem auto;
+    background-color: #fff;
+    width: 500px;
 }
 
-.compose-form input, .compose-form textarea {
+#title {
     width: 100%;
-    padding: 0.4rem;
-    outline: none;
-    border: 1px solid rgb(161, 157, 157);
-    border-radius: 5px;
+    padding: 0.5rem 1.4rem;
 }
 
-.compose-form textarea {
-    min-height: 40vh;
+#body{
+    width: 100%;
+    min-height: 280px;
 }
 
-.input-div{
-    margin-bottom: 1rem;
+.form-div label{
+    font-weight: 600;
+    color: rgb(32, 28, 28);
 }
 
-.compose-form button {
-    background-color: #6F84FF;
-    color: white;
-    padding: 0.4rem 1.5rem;
-    border-radius: 7px;
+.form-div input, .form-div textarea{
+    font-size: 1.2rem;
+    margin-top: 0.6rem;
+    border: 1px solid rgb(32, 28, 28);
 }
 
-.compose-form-btn-div{
-    text-align: center;
-}
-
-
-@media screen and (min-width: 543px) {
-
-}    
-
-@media screen and (min-width: 800px) {
-
+.form-body-div, .form-btn-div {
+    margin-top: 1.2rem;
 }

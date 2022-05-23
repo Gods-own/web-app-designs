@@ -1,0 +1,29 @@
+.note-view-section{
+    padding: 1rem 1.2rem;
+    background-color: #fff;
+    width: 500px;
+    min-height: 440px;
+    margin: 6.7rem auto;
+    /* border-left: 10px solid black; */
+    box-shadow: 3px 3px 20px #ccc, -3px -3px 20px #ccc;
+    border-radius: 2px 50px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    line-height: 1.9rem;
+}
+
+.note-view-section h3 {
+    line-height: 2.1rem;
+}
+
+.note-view-section::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.note-view-section {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
