@@ -46,6 +46,7 @@
     border: 1px solid #ccc;
     position: relative;
     overflow: hidden;  
+    width: 467px;
     grid-template-columns: repeat(6, 1fr);
 }
 .chart-row {
@@ -116,36 +117,35 @@
 }
 .chart-row-bars .chart-li-one {
     grid-row: 1/5; 
-    grid-column: 1/6;
     background-color:#588BAE;
 }
 .chart-row-bars .chart-li-two-a {
-    grid-row: 1/6; 
+    grid-row: 12/13; 
     background-color: #0080FF;
 }
 .chart-row-bars .chart-li-two-b {
-    grid-column: 2/4; 
+    grid-row: 2/5;  
     background-color:#4682B4;
 } 
 .chart-row-bars .chart-li-three {
-    grid-column: 1/2; 
+    grid-row: 4/6; 
     background-color:#57A0D3;
 }
 .chart-row-bars .chart-li-four {
-    grid-column: 1/5; 
+    grid-row: 7/8; 
     background-color:#0E4D92;
 }
 .chart-row-bars .chart-li-five {
-    grid-column: 2/6; 
+    grid-column: 2/3; 
     background-color:#4F97A3;
 }
 
 .chart-row-bars .chart-li-six {
-    grid-column: 2/6; 
+    grid-row: 4/5;  
     background-color:#4F97A3;
 }
 
 .chart-row-bars .chart-li-seven {
-    grid-column: 2/6; 
+    grid-row: 11/13;  
     background-color:#4F97A3;
 }

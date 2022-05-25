@@ -14,6 +14,11 @@
     margin: auto;
 }
 
+.semester-item.two{
+    border-left: 3px solid #f0f0f0;
+    padding-left: 0.6rem;
+}
+
 .semester-info{
     display: flex;
     justify-content: space-between;
@@ -24,37 +29,51 @@
     padding: 1rem;
     text-align: center;
     /* background-color: palegreen; */
-    background: #30A1E6;
     min-width: 150px;
     width: 200px;
     border-radius: 10px;
+    box-shadow: 4px 4px 10px #ccc, -4px -4px 10px #ccc;
 }
 
 .semester-info-item div{
     margin-bottom: 1rem;
-    background: #30A1E6;
     width: 3.4rem;
     height: 3.4rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     border-radius: 3.4rem;
+    border: 2px solid #fff;
 }
 
 .semester-info-item.one, .semester-info-item.two{
     margin-right: 0.8rem;
+    color: #fff;
 }
 
-.semester-info-item.one div{
+.semester-info-item.one{
+    background-color: black;
+}
+
+.semester-info-item.two{
+    background: #30A1E6;
+}
+
+.semester-info-item.three{
+    background: #fff;
+    color: rgb(43, 64, 76);
+}
+
+/* .semester-info-item.one div{
     border: 1px solid #fff;
 }
 
 .semester-info-item.two div{
     border: 1px solid #fff;
-}
+} */
 
 .semester-info-item.three div{
-    border: 1px solid #fff;
+    border: 2px solid #ccc;
 }
 
 .semester-info-item i{
@@ -69,9 +88,68 @@
     margin-bottom: 1rem;
 }
 
-.semester-completion{
+/* .semester-completion{
     width: 100%;
+    height: 100%;
+    position: relative;
     border-radius: 10px;
     border: 1px solid #ccc;
-    padding: 0.8rem 1rem;
+} */
+
+.semester-completion{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    column-gap: 0.4rem;
+    grid-template-columns: 48% 1fr;
+    justify-content: center;
+    background-color: black;
+    justify-items: center;
+    /* align-items: center; */
+    place-self: center;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 0.5rem 0;
+}
+
+.child{
+    background-color: brown;
+    width: 100%;
+}
+.child h5{
+    font-size: 1.5rem;
+}
+.child p{
+    font-size: 1.7rem;
+}
+
+.childtwo{
+    position: relative;
+    background-color: violet;
+    width: 100%;
+}
+
+.semester-completion-child{
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    /* transform: translate(-50%, -50%); */
+    border-radius: 100px;
+    border: 10px solid purple;
+    border-left: 10px solid #ccc;
+}
+
+.semester-completion-child p{
+    text-align: center;
+    font-size: 1.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    position: absolute;
 }

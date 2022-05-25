@@ -96,7 +96,7 @@
             <img class="group-img" src="css/images/collaborate.png" width="80px" height="80px">
                 <h2>Courses</h2>
                 <p>10</p>
-                <div style="text-align: center;"><button id="join" class="groupdiv-btn">Join group</button></div>
+                <div style="text-align: center;"><button id="join" class="groupdiv-btn">View all</button></div>
           </div>
                 <!--  End of the join group div -->
 
@@ -105,7 +105,7 @@
             <img class="group-img" src="css/images/create.png" width="70px" height="70px">
                 <h2>Documents</h2>
                 <p>09</p>
-                <div style="text-align: center;"><button id="create" class="groupdiv-btn">Create</button></div>
+                <div style="text-align: center;"><button id="create" class="groupdiv-btn">View all</button></div>
           </div>
                <!-- End of the create group div -->
           </div>
@@ -151,23 +151,52 @@
 
             <div class="cadres">
               <div class="card-head">
-              <h3>Schedules</h3>
+              <h3>Courses</h3>
               <button>See All <span class="las la-arrow-right"></span></button>
             </div>
             <div class="card-bodi">
 
                <div class="customer">
                  <div class="infos">
-                   <img src="css/images/bronze.gif" width="40px" height="40px" alt="">
+                   <div class="icon"><i class="las la-school"></i></div>
                    <div>
-                     <h4>Regular</h4>
-                     <small>&#8358;1,250 (weekly)</small>
+                     <h4>TPE 321</h4>
                    </div>
                  </div>
-                  <button>View</button>
+                  <div class="course-title-div"><p>Introduction to engineering management hgvgtfc gvhgvcg gyvfgfv hyg</p></div>
                </div>
 
                <div class="customer">
+                <div class="infos">
+                  <div class="icon"><i class="las la-school"></i></div>
+                  <div>
+                    <h4>TPE 321</h4>
+                  </div>
+                </div>
+                 <div class="course-title-div"><p>Introduction to engineering management</p></div>
+              </div>
+
+              <div class="customer">
+                <div class="infos">
+                  <div class="icon"><i class="las la-school"></i></div>
+                  <div>
+                    <h4>TPE 321</h4>
+                  </div>
+                </div>
+                 <div class="course-title-div"><p>Introduction to engineering management jjhgyyv gugugu uhgughu tyfvt</p></div>
+              </div>
+
+              <div class="customer">
+                <div class="infos">
+                  <div class="icon"><i class="las la-school"></i></div>
+                  <div>
+                    <h4>TPE 321</h4>
+                  </div>
+                </div>
+                 <div class="course-title-div"><p>Introduction to engineering management</p></div>
+              </div>
+
+               <!-- <div class="customer">
                  <div class="infos">
                    <img src="css/images/silver.jpg" width="40px" height="40px" alt="">
                    <div>
@@ -198,7 +227,7 @@
                    </div>
                  </div>
                   <button>View</button>
-               </div>
+               </div> -->
 
             </div>
           </div>
@@ -307,11 +336,15 @@
              <div class="semester-item two">
                <!-- <img src="css/images/education.png"> -->
                <div class="semester-completion">
-                 <div>
+                 <div class="child">
                    <h5>Semester completion</h5>
                    <p>85%</p>
                  </div>
-                 <div></div>
+                 <div class="childtwo">
+                  <div class="semester-completion-child">
+                      <!-- <p>85%</p> -->
+                  </div>
+                </div>
                </div>
              </div>
            </div>
@@ -327,59 +360,30 @@
           <!-- The chart div -->
 
           <div class="schedule">
-            <h3>My Schedule</h3>
           <div class="chart-container">
-    <div class="chart">
-    <div class="chart-row chart-period">
-        <div class="chart-row-item">Jun</div>
-        <span>7 am</span><span>8 am</span><span>9 am</span>
-        <span>10 am</span><span>11 am</span>
-        <span>12 pm</span><span>1 pm</span>
-        <span>2 pm</span><span>3 pm</span><span>4 pm</span>
-        <span>5 pm</span><span>6 pm</span>
-    </div>
-    <div class="chart-row chart-lines">
-      <span></span><span></span><span></span>
-      <span></span><span></span>
-      <span></span><span></span><span></span>
-      <span></span><span></span>
-      <span></span><span></span><span></span>
-      <span></span>
-      <!-- <span></span> -->
-      <!-- <span></span> -->
-    </div>
-    <div class="chart-row">
-      <div class="chart-row-item">Mon</div>
-      <ul class="chart-row-bars">
-        <li class="chart-li-one">TPE 321</li>
-      </ul>
-    </div>
-    <div class="chart-row">
-      <div class="chart-row-item">Tue</div>
-      <ul class="chart-row-bars">
-        <li class="chart-li-two-a">Pay &#8358; 2,500 to Attainable group</li>          
-      </ul>
-    </div>
-    <div class="chart-row">
-      <div class="chart-row-item">Wed</div>
-      <ul class="chart-row-bars">
-        <li class="chart-li-three">pay &#8358; 2,500 to Attainable group</li>
-      </ul>
-    </div>
-    <div class="chart-row">
-      <div class="chart-row-item">Thur</div>
-      <ul class="chart-row-bars">
-        <li class="chart-li-four">pay &#8358; 2,500 to Attainable group</li>
-      </ul>
-    </div>
-    <div class="chart-row">
-      <div class="chart-row-item">Fri</div>
-      <ul class="chart-row-bars">
-        <li class="chart-li-six">pay &#8358; 2,500 to Attainable group</li>
-      </ul>
-    </div>
-  
-  </div>
+            <div class="chart">
+
+              <div class="chart-column chart-time">
+                <diV class="chart-period">Time</diV><div>07:00 am</div><div>08:00 am</div><div>09:00 am</div><div>10:00 am</div><div>11:00 am</div><div>12:00 am</div><div>01:00 am</div><div>02:00 am</div>
+                <div>03:00 am</div><div>04:00 am</div><div>05:00 am</div><div>06:00 am</div>
+              </div>
+          
+              <div class="chart-column chart-lines">
+                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </div>
+          
+              <div class="chart-column chart-content">
+                <div class="chart-row-item chart-heading"><h3>Class Schedule for today (Mon)</h3></div>
+                <div class="chart-row-bars chart-item-sun">
+                  <div class="chart-text-container">
+                    <p>pay &#8358; 2,500 to Attainable group</p>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          
   
      </div>
           </div>

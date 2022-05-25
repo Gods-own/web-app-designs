@@ -124,10 +124,9 @@ nav ul li a{
     white-space: nowrap;
 }
 
-.note-div {
+/* .note-div {
     display: grid;
     margin-top: 2rem;
-    /* background-color: green; */
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 1.3rem;
     justify-content: center;
@@ -136,17 +135,38 @@ nav ul li a{
 }
 
 .note-preview {
+    box-shadow: 3px 3px 15px #CCC, -3px -3px 15px #CCC;
     width: 180px;
-    /* height: 180px; */
     padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+} */
+
+.note-div {
+    margin-top: 2rem;
+    column-gap: 0.5rem;
+    column-fill: balance;
+    columns: 3 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+.note-preview {
+    display: inline-block;
+    break-inside: avoid;
+    box-shadow: 3px 3px 5px #CCC, -3px -3px 5px #CCC;
+    width: 180px;
+    padding: 1rem;
+    margin-bottom: 1.3rem;
     background-color: white;
     border-radius: 10px;
 }
 
 .note-preview h3{
-    overflow-x: hidden;
+    /* overflow-x: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap; */
     margin: 0;
 }
 
