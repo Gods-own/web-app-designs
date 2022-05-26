@@ -9,10 +9,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/sidebar.css" rel="stylesheet">
   <link href="css/schedule.css" rel="stylesheet">
   <link href="css/semester.css" rel="stylesheet">
+  <!-- <script type="importmap">
+    {
+      "imports" : {
+        "billboard.js" : "https://unpkg.com/browse/billboard.js@3.4.1/dist/"
+      }
+    }
+  </script>   -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
 </head>
 <body>
   <input type="checkbox" id="nav-toggle">
@@ -151,12 +161,13 @@
 
             <div class="cadres">
               <div class="card-head">
-              <h3>Courses</h3>
-              <button>See All <span class="las la-arrow-right"></span></button>
+              <h3>Performance metrics for on time task delivery</h3>
             </div>
             <div class="card-bodi">
 
-               <div class="customer">
+              <div id="gaugeChart"></div>
+
+               <!-- <div class="customer">
                  <div class="infos">
                    <div class="icon"><i class="las la-school"></i></div>
                    <div>
@@ -194,7 +205,7 @@
                   </div>
                 </div>
                  <div class="course-title-div"><p>Introduction to engineering management</p></div>
-              </div>
+              </div> -->
 
                <!-- <div class="customer">
                  <div class="infos">
@@ -333,8 +344,9 @@
                   </div>
                 </div>
              </div>
+
              <div class="semester-item two">
-               <!-- <img src="css/images/education.png"> -->
+               <!-- <img src="css/images/education.png">
                <div class="semester-completion">
                  <div class="child">
                    <h5>Semester completion</h5>
@@ -342,9 +354,18 @@
                  </div>
                  <div class="childtwo">
                   <div class="semester-completion-child">
-                      <!-- <p>85%</p> -->
+                      <p>85%</p>
                   </div>
                 </div>
+               </div> -->
+               <h2>Semester completion</h2>
+               <div class="progress-bar-div">
+                  <div>
+                    <p>85% completion</p>
+                    <div class="semester-progress-bar">
+                      <div class="inner-progress-bar"></div>
+                    </div>
+                  </div>
                </div>
              </div>
            </div>
@@ -400,6 +421,8 @@
 
   </div>
      <!--  End of main content -->
+   <script type="module" src="./js/guage-chart.js"></script>  
+   <script nomodule src="./js/guage-chart.js"></script>  
 
 </body>
 </html>
