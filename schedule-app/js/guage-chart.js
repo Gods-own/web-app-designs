@@ -23,7 +23,7 @@ var chart = bb.generate({
      }
     },
     gauge: {
-      width: 80,
+      width: 50,
     },
     color: {
       pattern: [

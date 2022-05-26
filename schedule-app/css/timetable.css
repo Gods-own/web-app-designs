@@ -1,0 +1,99 @@
+
+  .chart-container {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.schedule {
+    padding-top: 10px;
+    height: 450px;
+    position: relative;
+}
+
+.chart{
+    display: grid;
+    position: relative;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    grid-template-columns: 120px repeat(7, 1fr);
+    border: 1px solid #ccc;
+    background-color: palegreen;
+}
+
+.chart-column {
+    display: grid;
+    grid-template-rows: 50px repeat(12, 1fr);
+}
+
+.chart-column:not(.chart-time) {
+    border-right: 1px solid #ccc;
+}
+
+/* .chart-heading{
+    background-color: #F0F0F0;
+} */
+
+.chart-column div {
+    padding: 1rem;
+    /* border-bottom: 1px solid green;
+    border-right: 1px solid black; */
+}
+
+/* .chart-time div:not(.chart-period){
+    padding: 1rem;
+    border-bottom: 1px solid green;
+    border-right: 1px solid black;
+} */
+
+.chart-content{
+    padding: 0 0.8rem;
+    background-color: #fff;
+}
+
+.chart-time{
+    background-color: #F0F0F0;
+}
+
+.chart-time{
+    font-weight: 600;
+    color: rgb(36, 28, 28);
+}
+
+.chart-lines {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 50px repeat(12, 1fr);
+}
+.chart-lines > span {
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.chart-row-bars {
+    font-weight: 450;
+    font-size: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: rgb(1, 124, 1);
+    border-left: 7px solid  rgb(9, 71, 9);
+    z-index: 20;
+}
+
+.chart-row-bars p{
+    font-weight: 450;
+    font-size: 15px;
+    color: #fff;
+}
+
+.chart-row-bars.chart-item-sun {
+    grid-row: 2/5;
+}
+
+@media screen and (max-width: 923px){
+    .chart{
+        width: 800px;
+    }
+}

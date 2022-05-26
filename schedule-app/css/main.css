@@ -523,7 +523,7 @@ main {
   padding-left: 0rem;
 }
 
-.sidebar .sidebar-brand h2 span:last-child,
+.sidebar .sidebar-brand span:last-child,
 .sidebar li a span:last-child{
   display: none;
 }
@@ -636,7 +636,7 @@ main {
 }
 
 
-#nav-toggle:checked + .sidebar.sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar.sidebar-brand span:last-child,
 #nav-toggle:checked + .sidebar li a span:last-child{
   display: inline;
 }

@@ -219,14 +219,10 @@
        grid-template-columns: repeat(auto-fill, 100%);
         width: 100%;
     }
-    /* .semester-info{
+    .semester-info{
         justify-content: center;
         flex-wrap: wrap;
         margin-top: 1.5rem;
-    } */
-    .semester-info-item.one, .semester-info-item.two{
-        margin-right: 0;
-        color: #fff;
     }
     .semester-item.two{
         margin-top: 1.5rem;
@@ -238,3 +234,28 @@
         height: 200px;
     }
 }
+
+@media screen and (max-width: 685px){
+    .semester-info-item.one, .semester-info-item.two{
+        margin-right: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 492px){
+    .semester-info-item.one, .semester-info-item.two{
+        margin-right: 0;
+    }
+}
+
+
+/* @media screen and (max-width: 524px){
+    .semester-info-item.one{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .semester-info-item.one, .semester-info-item.two{
+        margin-bottom: 0;
+    }
+} */
