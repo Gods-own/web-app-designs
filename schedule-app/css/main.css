@@ -251,7 +251,7 @@ main {
   padding-left: 0.7rem;
 }
 
-.history {
+/* .history {
   margin-top: 40px;
 }
 
@@ -275,7 +275,7 @@ main {
 .history-div img {
   border-radius: 10px;
   margin-right: 30px;
-}
+} */
 
 .card-head, .card-bodi {
   padding: 1rem;
