@@ -1,0 +1,40 @@
+nav{
+    background-color: rgb(4, 4, 19);
+    width: 250px;
+    min-height: 100vh;
+    padding: 1.7rem 0.5rem;
+}
+
+.sidebar-brand img{
+    width: 90px;
+}
+
+.sidebar-menu{
+    margin-top: 1.4rem;
+}
+
+.navigation-item{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.navigation-item.active{
+    background-color: #fff;
+}
+
+.navigation-item.active .navigation-link{
+    color: #000;
+}
+
+.navigation-link{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.navigation-link span{
+    margin-left: 1rem;
+}
+
+.navigation-link i{
+    font-size: 1.3rem;
+}

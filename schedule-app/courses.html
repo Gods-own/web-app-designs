@@ -14,8 +14,8 @@
   <link href="css/sidebar.css" rel="stylesheet">
   <link href="css/timetable.css" rel="stylesheet">
   <link href="css/courses.css" rel="stylesheet">
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+  <link rel="stylesheet" href="caleandar-master/css/theme1.css"/>
+  <script type="text/javascript" src="caleandar-master/js/caleandar.min.js"></script>
 </head>
 <body>
   <input type="checkbox" id="nav-toggle">
@@ -75,10 +75,12 @@
 
          <!--  the div responsible for dividing the main body into two grids, namely the dashboard grid and the schedule div-->
 
-         <div>
-         <div>
+         <div class="course-grid">
+
+         <section>
+          <h2>My Courses</h2>
           <article class="course-card">
-            <div class="img-div"><img src="css/images/Abstract Paper.svg"></div>
+            <div class="img-div"><img src="css/images/Colored Patterns.svg"></div>
             
             <div class="course-info">
 
@@ -95,7 +97,7 @@
               <div class="course-schedule-div">
 
                 <div class="course-next-time">
-                  <div><p>Monday</p></div>
+                  <div><p>Monda+y</p></div>
                   <div><p>9am-10am</p></div>
                 </div>
 
@@ -110,7 +112,71 @@
           </article>
 
             <article class="course-card">
-              <div class="img-div"><img src="css/images/Abstract Paper.svg"></div>
+              <div class="img-div"><img src="css/images/Colored Shapes.svg"></div>
+              
+              <div class="course-info">
+
+                <div class="course-heading">
+
+                  <div>
+                    <h2>TPE 321</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
+                  </div>
+
+                  <div><p>Assignments 2</p></div>
+                </div>
+
+                <div class="course-schedule-div">
+
+                  <div class="course-next-time">
+                    <div><p>Monday</p></div>
+                    <div><p>9am-10am</p></div>
+                  </div>
+
+                  <div class="course-info-count">
+                   <div><i class="las la-file"></i><span>40</span></div>
+                    <p>40 hours</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+
+            <article class="course-card">
+              <div class="img-div"><img src="css/images/Icon Grid.svg"></div>
+              
+              <div class="course-info">
+
+                <div class="course-heading">
+
+                  <div>
+                    <h2>TPE 321</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
+                  </div>
+
+                  <div><p>Assignments 2</p></div>
+                </div>
+
+                <div class="course-schedule-div">
+
+                  <div class="course-next-time">
+                    <div><p>Monday</p></div>
+                    <div><p>9am-10am</p></div>
+                  </div>
+
+                  <div class="course-info-count">
+                   <div><i class="las la-file"></i><span>40</span></div>
+                    <p>40 hours</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </article>
+
+            <article class="course-card">
+              <div class="img-div"><img src="css/images/Meteor.svg"></div>
               
               <div class="course-info">
 
@@ -143,70 +209,6 @@
 
             <article class="course-card">
               <div class="img-div"><img src="css/images/Abstract Paper.svg"></div>
-              
-              <div class="course-info">
-
-                <div class="course-heading">
-
-                  <div>
-                    <h2>TPE 321</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
-                  </div>
-
-                  <div><p>Assignments 2</p></div>
-                </div>
-
-                <div class="course-schedule-div">
-
-                  <div class="course-next-time">
-                    <div><p>Monday</p></div>
-                    <div><p>9am-10am</p></div>
-                  </div>
-
-                  <div class="course-info-count">
-                   <div><i class="las la-file"></i><span>40</span></div>
-                    <p>40 hours</p>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="course-card">
-              <div class="img-div"><img src="css/images/Abstract Paper.svg"></div>
-              
-              <div class="course-info">
-
-                <div class="course-heading">
-
-                  <div>
-                    <h2>TPE 321</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
-                  </div>
-
-                  <div><p>Assignments 2</p></div>
-                </div>
-
-                <div class="course-schedule-div">
-
-                  <div class="course-next-time">
-                    <div><p>Monday</p></div>
-                    <div><p>9am-10am</p></div>
-                  </div>
-
-                  <div class="course-info-count">
-                   <div><i class="las la-file"></i><span>40</span></div>
-                    <p>40 hours</p>
-                  </div>
-
-                </div>
-
-              </div>
-            </article>
-
-            <article class="course-card">
-              <div class="img-div"><img src="css/images/Abstract Paper.svg"></div>
 
               <div class="course-info">
 
@@ -236,7 +238,14 @@
 
               </div>
             </article>
-         </div>
+          </section>
+
+         <aside>
+           <div class="calender">
+
+           </div>
+         </aside>
+
          </div>
        
     </main>
@@ -244,6 +253,7 @@
 
   </div>
      <!--  End of main content --> 
+     <script src="js/calender.js"></script>
 
 </body>
 </html>

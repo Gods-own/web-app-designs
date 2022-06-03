@@ -1,3 +1,19 @@
+
+
+#nav-toggle:checked ~ .main-content .main-main .course-grid{
+    display: grid;
+    grid-template-columns: 1fr 35%;
+    column-gap: 1.3rem;
+}
+
+#nav-toggle:checked ~ .main-content .main-main .course-grid aside{
+    display: block;
+}
+
+aside{
+    display: none;
+}
+
 .course-card{
     background-color: #fff;
     display: grid;
@@ -21,6 +37,7 @@
     height: 0;
     min-width: 100%;
     min-height: 100%;
+    border-radius: 15px;
 } 
 
 .course-heading{
@@ -33,11 +50,12 @@
 }
 
 .course-heading h2{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .course-heading p{
     color: rgb(116, 112, 112);
+    line-height: 1.5rem;
 }
 
 .course-schedule-div{
@@ -82,6 +100,28 @@
 
 .course-info-count p{
     color: rgb(116, 112, 112);
+}
+
+.course-grid {
+    display: block;
+}
+
+.course-grid section > h2{
+    margin-bottom: 2rem;
+} 
+
+.calender {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 1150px) {
+    #nav-toggle:checked ~ .main-content .main-main .course-grid{
+        display: block;
+    }
+    #nav-toggle:checked ~ .main-content .main-main .course-grid aside{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 750px) {
