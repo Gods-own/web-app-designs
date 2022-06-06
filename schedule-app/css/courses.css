@@ -166,27 +166,59 @@ aside{
     justify-content: space-between;
 }
 
-.course-assignments{
-    margin-top: 1.5rem;
+.ass-subject span, .ass-timeline span, .deadline-days-count span {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.course-assignments article{
+.ass-subject span, .ass-timeline span, .deadline-days-count span:last-child {
+    color: rgb(126, 123, 123);
+}
+
+.course-assignments{
+    margin-top: 1.5rem;
+    padding: 0.8rem 0.4rem;
+    background-color: #fff;
+}
+
+
+.task-deadline{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-items: center;
     background-color: #fff;
     padding: 0.6rem 1rem;
     border-radius: 10px;
 }
 
-/* .calender li{
-    background-color: blue;
-} */
+.task-deadline:first-child{
+    background-color: #000;
+    color: #fff;
+}
 
-/* .calender svg{
-    background-color: blue;
-} */
+.task-deadline:not(.task-deadline:first-child){
+    margin-top: 0.8rem;
+}
 
-/* .cld-datetime{
-    width: 100%;
-} */
+.deadline-days-count span:first-child{
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: block;
+}
+
+.deadline-days-count{
+    border-right: 1px solid black;
+    padding-right: 0.6rem;
+    text-align: center;
+}
+
+.deadline-days-count:first-child{
+    border-right: 1px solid #fff;
+}
+
+.task-info-div{
+    margin-left: 0.6rem;
+}
 
 @media only screen and (max-width: 1150px) {
     #nav-toggle:checked ~ .main-content .main-main .course-grid{
