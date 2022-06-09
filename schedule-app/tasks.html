@@ -1,90 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/sidebar.css" rel="stylesheet">
-  <link href="css/semester.css" rel="stylesheet">
-  <link href="css/schedule.css" rel="stylesheet">
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
-</head>
-<body>
-  <input type="checkbox" id="nav-toggle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/semester.css" rel="stylesheet" />
+    <link href="css/tasks.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
 
-  <nav class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-brand">
-        <span><img src="css/images/logo1.png"></span><span>Inone</span>
+        <span><img src="css/images/logo1.png" /></span><span>Inone</span>
       </div>
 
       <div class="sidebar-menu">
         <ul>
           <li>
-            <a href="index.html" class="active"><span class="las la-igloo"></span><span>Dashboard</span></a>
+            <a href="index.html" class="active"
+              ><span class="las la-igloo"></span><span>Dashboard</span></a
+            >
           </li>
           <li>
-            <a href="document.html"><span class="las la-file"></span><span>Documents</span></a>
+            <a href="schedule.html"
+              ><span class="las la-business-time"></span
+              ><span>Schedule</span></a
+            >
           </li>
           <li>
-            <a href="schedule.html"><span class="las la-business-time"></span><span>Schedule</span></a>
+            <a href="tasks.html"
+              ><span class="las la-business-time"></span><span>Tasks</span></a
+            >
           </li>
           <li>
-            <a href="tasks.html"><span class="las la-business-time"></span><span>Tasks</span></a>
+            <a href="timetable.html"
+              ><span class="las la-clock"></span><span>Timetable</span></a
+            >
           </li>
           <li>
-            <a href="timetable.html"><span class="las la-clock"></span><span>Timetable</span></a>
+            <a href="courses.html"
+              ><span class="las la-school"></span><span>Courses</span></a
+            >
           </li>
           <li>
-            <a href="courses.html"><span class="las la-school"></span><span>Courses</span></a>
-          </li>
-          <li>
-            <a href="settings.html"><span class="las la-cog"></span><span>Settings</span></a>
+            <a href="settings.html"
+              ><span class="las la-cog"></span><span>Settings</span></a
+            >
           </li>
         </ul>
       </div>
-  </nav>
+    </nav>
 
-  <div class="main-content">
+    <div class="main-content">
+      <!-- the header -->
 
-    <!-- the header -->
+      <header>
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"></span>
+          </label>
+        </h2>
 
-    <header>
-      <h2>
-        <label for="nav-toggle">
-          <span class="las la-bars"></span>
-        </label>
-      </h2>
-
-      <div class="user-wrapper">
-        <img src="css/images/profile-3.jpg" width="25px" height="25px" alt="">
-        <div>
-          <h4>Khalid</h4>
+        <div class="user-wrapper">
+          <img
+            src="css/images/profile-3.jpg"
+            width="25px"
+            height="25px"
+            alt=""
+          />
+          <div>
+            <h4>Khalid</h4>
+          </div>
         </div>
-      </div>
-    </header>
-         <!-- End of the header -->
+      </header>
+      <!-- End of the header -->
 
-         <!-- the main body -->
+      <!-- the main body -->
 
-    <main class="main-main">
+      <main class="main-main">
+        <!--  End of the div responsible for dividing the main body into grid, namely the dashboard grid and the schedule div -->
+        <div class="tasks-page">
+          <section>
+            <div class="all-tasks-div">
+              <article class="task-div">
+                <div class="task-div-inner">
+                  <div class="task-more-info">
+                    <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                    <button><i class="las la-ellipsis-v"></i></button>
+                  </div>
+                  <div class="task-course-details">
+                    <h3 class="task-course-code">TPE 321</h3>
+                    <p class="task-course-title">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Sit velit dicta repellendus id molestias recusandae
+                    </p>
+                    <p class="task-progress">progress</p>
+                    <div class="task-progress-bar">
+                      <div class="task-progress-inner"></div>
+                    </div>
+                    <p class="task-progress-percent">40%</p>
+                  </div>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
 
-          <!--  End of the div responsible for dividing the main body into grid, namely the dashboard grid and the schedule div -->
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
 
-    </main>
-          <!-- End of the main body -->
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
 
-  </div>
-     <!--  End of main content -->
-   <script type="module" src="./js/guage-chart.js"></script>  
-   <script nomodule src="./js/guage-chart.js"></script>  
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
 
-</body>
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+
+              <article class="task-div">
+                <div class="task-more-info">
+                  <p><i class="las la-exclamation-circle"></i>Jul,20,2022</p>
+                  <button><i class="las la-ellipsis-v"></i></button>
+                </div>
+                <div class="task-course-details">
+                  <h3 class="task-course-code">TPE 321</h3>
+                  <p class="task-course-title">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sit velit dicta repellendus id molestias recusandae
+                  </p>
+                  <p class="task-progress">progress</p>
+                  <div class="task-progress-bar">
+                    <div class="task-progress-inner"></div>
+                  </div>
+                  <p class="task-progress-percent">40%</p>
+                </div>
+                <div class="task-bottom-divider"></div>
+                <div class="task-remaining-days">
+                  <button>3 weeks left</button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section></section>
+        </div>
+      </main>
+      <!-- End of the main body -->
+    </div>
+    <!--  End of main content -->
+  </body>
 </html>

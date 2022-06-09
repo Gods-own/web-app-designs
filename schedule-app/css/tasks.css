@@ -1,0 +1,74 @@
+.tasks-page {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+.all-tasks-div {
+  columns: 3 200px;
+  column-gap: 2rem;
+  column-fill: balance;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.task-div {
+  display: inline-block;
+  break-inside: avoid;
+  background-color: #fff;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.task-div-inner {
+  padding: 0 0.8rem;
+  width: 100%;
+}
+
+.task-more-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-course-details {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.task-course-details {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-course-title {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.task-course-code,
+.task-course-title {
+  text-align: center;
+}
+
+.task-progress-bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.task-progress-inner {
+  width: 40%;
+  height: 100%;
+  background-color: purple;
+}
+
+.task-progress-percent {
+  text-align: right;
+}
+
+.task-bottom-divider {
+  height: 0.1rem;
+  background-color: #ccc;
+}

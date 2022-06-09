@@ -1,260 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css">
-  <link rel="stylesheet" href="caleandar-master/css/theme1.css"/>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/sidebar.css" rel="stylesheet">
-  <link href="css/timetable.css" rel="stylesheet">
-  <link href="css/courses.css" rel="stylesheet">
-  <script type="text/javascript" src="caleandar-master/js/caleandar.min.js"></script>
-</head>
-<body>
-  <input type="checkbox" id="nav-toggle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+    />
+    <link rel="stylesheet" href="caleandar-master/css/theme1.css" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/timetable.css" rel="stylesheet" />
+    <link href="css/courses.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="caleandar-master/js/caleandar.min.js"
+    ></script>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
 
-  <nav class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-brand">
-        <span><img src="css/images/logo1.png"></span><span>Inone</span>
+        <span><img src="css/images/logo1.png" /></span><span>Inone</span>
       </div>
 
       <div class="sidebar-menu">
         <ul>
           <li>
-            <a href="index.html" class="active"><span class="las la-igloo"></span><span>Dashboard</span></a>
+            <a href="index.html" class="active"
+              ><span class="las la-igloo"></span><span>Dashboard</span></a
+            >
           </li>
           <li>
-            <a href="document.html"><span class="las la-file"></span><span>Documents</span></a>
+            <a href="schedule.html"
+              ><span class="las la-business-time"></span
+              ><span>Schedule</span></a
+            >
           </li>
           <li>
-            <a href="schedule.html"><span class="las la-business-time"></span><span>Schedule</span></a>
+            <a href="tasks.html"
+              ><span class="las la-business-time"></span><span>Tasks</span></a
+            >
           </li>
           <li>
-            <a href="tasks.html"><span class="las la-business-time"></span><span>Tasks</span></a>
+            <a href="timetable.html"
+              ><span class="las la-clock"></span><span>Timetable</span></a
+            >
           </li>
           <li>
-            <a href="timetable.html"><span class="las la-clock"></span><span>Timetable</span></a>
+            <a href="courses.html"
+              ><span class="las la-school"></span><span>Courses</span></a
+            >
           </li>
           <li>
-            <a href="courses.html"><span class="las la-school"></span><span>Courses</span></a>
-          </li>
-          <li>
-            <a href="settings.html"><span class="las la-cog"></span><span>Settings</span></a>
+            <a href="settings.html"
+              ><span class="las la-cog"></span><span>Settings</span></a
+            >
           </li>
         </ul>
       </div>
-  </nav>
+      <div></div>
+    </nav>
 
-  <div class="main-content">
+    <div class="main-content">
+      <!-- the header -->
 
-    <!-- the header -->
+      <header>
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"></span>
+          </label>
+        </h2>
 
-    <header>
-      <h2>
-        <label for="nav-toggle">
-          <span class="las la-bars"></span>
-        </label>
-      </h2>
-
-      <div class="user-wrapper">
-        <img src="css/images/profile-3.jpg" width="25px" height="25px" alt="">
-        <div>
-          <h4>Khalid</h4>
-        </div>
-      </div>
-    </header>
-         <!-- End of the header -->
-
-         <!-- the main body -->
-
-    <main class="main-main">
-
-         <!--  the div responsible for dividing the main body into two grids, namely the dashboard grid and the schedule div-->
-
-         <div class="course-grid">
-
-         <section>
-          <h1>My Courses</h1>
-          <div class="course-filter">
-            <button>All</button>
-            <button class="active">Today</button>
-            <button>Tomorrow</button>
+        <div class="user-wrapper">
+          <img
+            src="css/images/profile-3.jpg"
+            width="25px"
+            height="25px"
+            alt=""
+          />
+          <div>
+            <h4>Khalid</h4>
           </div>
-          <article class="course-card">
-            <div class="img-div"><img src="css/images/Colored Patterns.svg"></div>
-            
-            <div class="course-info">
+        </div>
+      </header>
+      <!-- End of the header -->
 
-              <div class="course-heading">
+      <!-- the main body -->
 
-                <div>
-                  <h2>TPE 321</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea Lorem ffgg gnhn  uk fggg gg ggg ggg ggg ggg gggg ggg nhk jhmi hg hn yuy</p>
-                </div>
+      <main class="main-main">
+        <!--  the div responsible for dividing the main body into two grids, namely the dashboard grid and the schedule div-->
 
-                <div><p>2 Assignments</p></div>
-              </div>
-
-              <div class="course-schedule-div">
-
-                <div class="course-next-time">
-                  <div><p>Monda+y</p></div>
-                  <div><p>9am-10am</p></div>
-                </div>
-
-                <div class="course-info-count">
-                 <div><i class="las la-file"></i><span>40</span></div>
-                  <p>40 hours</p>
-                </div>
-
-              </div>
-
+        <div class="course-grid">
+          <section>
+            <h1>My Courses</h1>
+            <div class="course-filter">
+              <button>All</button>
+              <button class="active">Today</button>
+              <button>Tomorrow</button>
             </div>
-          </article>
-
             <article class="course-card">
-              <div class="img-div"><img src="css/images/Colored Shapes.svg"></div>
-              
+              <div class="img-div">
+                <img src="css/images/Colored Patterns.svg" />
+              </div>
+
               <div class="course-info">
-
                 <div class="course-heading">
-
                   <div>
                     <h2>TPE 321</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dicta ea Lorem ffgg gnhn uk fggg gg ggg ggg ggg ggg gggg
+                      ggg nhk jhmi hg hn yuy
+                    </p>
                   </div>
 
-                  <div><p>Assignments 2</p></div>
+                  <div><p>2 Assignments</p></div>
                 </div>
 
                 <div class="course-schedule-div">
-
                   <div class="course-next-time">
-                    <div><p>Monday</p></div>
+                    <div><p>Monda+y</p></div>
                     <div><p>9am-10am</p></div>
                   </div>
 
                   <div class="course-info-count">
-                   <div><i class="las la-file"></i><span>40</span></div>
+                    <div><i class="las la-file"></i><span>40</span></div>
                     <p>40 hours</p>
                   </div>
-
                 </div>
-
               </div>
             </article>
 
             <article class="course-card">
-              <div class="img-div"><img src="css/images/Icon Grid.svg"></div>
-              
+              <div class="img-div">
+                <img src="css/images/Colored Shapes.svg" />
+              </div>
+
               <div class="course-info">
-
                 <div class="course-heading">
-
                   <div>
                     <h2>TPE 321</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dicta ea
+                    </p>
                   </div>
 
                   <div><p>Assignments 2</p></div>
                 </div>
 
                 <div class="course-schedule-div">
-
                   <div class="course-next-time">
                     <div><p>Monday</p></div>
                     <div><p>9am-10am</p></div>
                   </div>
 
                   <div class="course-info-count">
-                   <div><i class="las la-file"></i><span>40</span></div>
+                    <div><i class="las la-file"></i><span>40</span></div>
                     <p>40 hours</p>
                   </div>
-
                 </div>
-
               </div>
             </article>
 
             <article class="course-card">
-              <div class="img-div"><img src="css/images/Meteor.svg"></div>
-              
+              <div class="img-div"><img src="css/images/Icon Grid.svg" /></div>
+
               <div class="course-info">
-
                 <div class="course-heading">
-
                   <div>
                     <h2>TPE 321</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dicta ea
+                    </p>
                   </div>
 
                   <div><p>Assignments 2</p></div>
                 </div>
 
                 <div class="course-schedule-div">
-
                   <div class="course-next-time">
                     <div><p>Monday</p></div>
                     <div><p>9am-10am</p></div>
                   </div>
 
                   <div class="course-info-count">
-                   <div><i class="las la-file"></i><span>40</span></div>
+                    <div><i class="las la-file"></i><span>40</span></div>
                     <p>40 hours</p>
                   </div>
-
                 </div>
-
               </div>
             </article>
 
             <article class="course-card">
-              <div class="img-div"><img src="css/images/Abstract Paper.svg"></div>
+              <div class="img-div"><img src="css/images/Meteor.svg" /></div>
 
               <div class="course-info">
-
                 <div class="course-heading">
-
                   <div>
                     <h2>TPE 321</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ea</p>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dicta ea
+                    </p>
                   </div>
 
                   <div><p>Assignments 2</p></div>
                 </div>
 
                 <div class="course-schedule-div">
-
                   <div class="course-next-time">
                     <div><p>Monday</p></div>
                     <div><p>9am-10am</p></div>
                   </div>
 
                   <div class="course-info-count">
-                   <div><i class="las la-file"></i><span>40</span></div>
+                    <div><i class="las la-file"></i><span>40</span></div>
                     <p>40 hours</p>
                   </div>
+                </div>
+              </div>
+            </article>
 
+            <article class="course-card">
+              <div class="img-div">
+                <img src="css/images/Abstract Paper.svg" />
+              </div>
+
+              <div class="course-info">
+                <div class="course-heading">
+                  <div>
+                    <h2>TPE 321</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dicta ea
+                    </p>
+                  </div>
+
+                  <div><p>Assignments 2</p></div>
                 </div>
 
+                <div class="course-schedule-div">
+                  <div class="course-next-time">
+                    <div><p>Monday</p></div>
+                    <div><p>9am-10am</p></div>
+                  </div>
+
+                  <div class="course-info-count">
+                    <div><i class="las la-file"></i><span>40</span></div>
+                    <p>40 hours</p>
+                  </div>
+                </div>
               </div>
             </article>
           </section>
 
-         <aside>
-           <div class="calender">
+          <aside>
+            <div class="calender"></div>
 
-           </div>
-
-           <div class="course-assignments">
-             <!-- <article>
+            <div class="course-assignments">
+              <!-- <article>
                <div class="ass-subject">
                 <h3>TPE 322</h3>
                 <div><i class="las la-times"></i><span>Closing: 12:00 pm</span></div>
@@ -265,68 +285,63 @@
                </div>
              </article> -->
 
-             <article class="task-deadline">
-               <div class="deadline-days-count">
-                 <span>05</span>
-                 <span>days left</span>
-               </div>
-               <div class="task-info-div">
-                <div class="ass-subject">
-                  <h3>TPE 322</h3>
-                  <div><span>Closing: 12:00 pm</span></div>
-                 </div>
-                 <div class="ass-timeline">
-                  <div><span>Start: May 13</span></div>
-                   <div><span>Deadline: Jun 23</span></div>
-                 </div>
-               </div>
-            </article>
-
-            <article class="task-deadline">
-              <div class="deadline-days-count">
-                <span>05</span>
-                <span>days left</span>
-              </div>
-              <div class="task-info-div">
-               <div class="ass-subject">
-                 <h3>TPE 322</h3>
-                 <div><span>Closing: 12:00 pm</span></div>
+              <article class="task-deadline">
+                <div class="deadline-days-count">
+                  <span>05</span>
+                  <span>days left</span>
                 </div>
-                <div class="ass-timeline">
-                 <div><span>Start: May 13</span></div>
-                  <div><span>Deadline: Jun 23</span></div>
+                <div class="task-info-div">
+                  <div class="ass-subject">
+                    <h3>TPE 322</h3>
+                    <div><span>Closing: 12:00 pm</span></div>
+                  </div>
+                  <div class="ass-timeline">
+                    <div><span>Start: May 13</span></div>
+                    <div><span>Deadline: Jun 23</span></div>
+                  </div>
                 </div>
-              </div>
-           </article>
+              </article>
 
-           <article class="task-deadline">
-            <div class="deadline-days-count">
-              <span>05</span>
-              <span>days left</span>
+              <article class="task-deadline">
+                <div class="deadline-days-count">
+                  <span>05</span>
+                  <span>days left</span>
+                </div>
+                <div class="task-info-div">
+                  <div class="ass-subject">
+                    <h3>TPE 322</h3>
+                    <div><span>Closing: 12:00 pm</span></div>
+                  </div>
+                  <div class="ass-timeline">
+                    <div><span>Start: May 13</span></div>
+                    <div><span>Deadline: Jun 23</span></div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="task-deadline">
+                <div class="deadline-days-count">
+                  <span>05</span>
+                  <span>days left</span>
+                </div>
+                <div class="task-info-div">
+                  <div class="ass-subject">
+                    <h3>TPE 322</h3>
+                    <div><span>Closing: 12:00 pm</span></div>
+                  </div>
+                  <div class="ass-timeline">
+                    <div><span>Start: May 13</span></div>
+                    <div><span>Deadline: Jun 23</span></div>
+                  </div>
+                </div>
+              </article>
             </div>
-            <div class="task-info-div">
-             <div class="ass-subject">
-               <h3>TPE 322</h3>
-               <div><span>Closing: 12:00 pm</span></div>
-              </div>
-              <div class="ass-timeline">
-               <div><span>Start: May 13</span></div>
-                <div><span>Deadline: Jun 23</span></div>
-              </div>
-            </div>
-         </article>
-
-           </div>
-         </aside>
-
-         </div>
-       
-    </main>
-          <!-- End of the main body -->
-
-  </div>
-     <!--  End of main content --> 
-     <script src="js/calender.js"></script>
-
-</body>
+          </aside>
+        </div>
+      </main>
+      <!-- End of the main body -->
+    </div>
+    <!--  End of main content -->
+    <script src="js/calender.js"></script>
+  </body>
 </html>
