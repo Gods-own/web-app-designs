@@ -1,0 +1,1 @@
+caleandar(document.querySelector(".calender"));

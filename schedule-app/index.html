@@ -1,166 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/sidebar.css" rel="stylesheet">
-  <link href="css/semester.css" rel="stylesheet">
-  <link href="css/schedule.css" rel="stylesheet">
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
-</head>
-<body>
-  <input type="checkbox" id="nav-toggle">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/semester.css" rel="stylesheet" />
+    <link href="css/schedule.css" rel="stylesheet" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-toggle" />
 
-  <nav class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-brand">
-        <span><img src="css/images/logo1.png"></span><span>Inone</span>
+        <span><img src="css/images/logo1.png" /></span><span>Inone</span>
       </div>
 
       <div class="sidebar-menu">
         <ul>
           <li>
-            <a href="index.html" class="active"><span class="las la-igloo"></span><span>Dashboard</span></a>
+            <a href="index.html" class="active"
+              ><span class="las la-igloo"></span><span>Dashboard</span></a
+            >
           </li>
           <li>
-            <a href="schedule.html"><span class="las la-business-time"></span><span>Schedule</span></a>
+            <a href="schedule.html"
+              ><span class="las la-business-time"></span
+              ><span>Schedule</span></a
+            >
           </li>
           <li>
-            <a href="tasks.html"><span class="las la-business-time"></span><span>Tasks</span></a>
+            <a href="tasks.html"
+              ><span class="las la-business-time"></span><span>Tasks</span></a
+            >
           </li>
           <li>
-            <a href="timetable.html"><span class="las la-clock"></span><span>Timetable</span></a>
+            <a href="timetable.html"
+              ><span class="las la-clock"></span><span>Timetable</span></a
+            >
           </li>
           <li>
-            <a href="courses.html"><span class="las la-school"></span><span>Courses</span></a>
+            <a href="courses.html"
+              ><span class="las la-school"></span><span>Courses</span></a
+            >
           </li>
           <li>
-            <a href="settings.html"><span class="las la-cog"></span><span>Settings</span></a>
+            <a href="settings.html"
+              ><span class="las la-cog"></span><span>Settings</span></a
+            >
           </li>
         </ul>
       </div>
-  </nav>
+    </nav>
 
-  <div class="main-content">
+    <div class="main-content">
+      <!-- the header -->
 
-    <!-- the header -->
+      <header>
+        <h2>
+          <label for="nav-toggle">
+            <span class="las la-bars"></span>
+          </label>
+        </h2>
 
-    <header>
-      <h2>
-        <label for="nav-toggle">
-          <span class="las la-bars"></span>
-        </label>
-      </h2>
-
-      <div class="user-wrapper">
-        <img src="css/images/profile-3.jpg" width="25px" height="25px" alt="">
-        <div>
-          <h4>Khalid</h4>
+        <div class="user-wrapper">
+          <img
+            src="css/images/profile-3.jpg"
+            width="25px"
+            height="25px"
+            alt=""
+          />
+          <div>
+            <h4>Khalid</h4>
+          </div>
         </div>
-      </div>
-    </header>
-         <!-- End of the header -->
+      </header>
+      <!-- End of the header -->
 
-         <!-- the main body -->
+      <!-- the main body -->
 
-    <main class="main-main">
+      <main class="main-main">
+        <!--  the div responsible for dividing the main body into two grids, namely the dashboard grid and the schedule div-->
 
-         <!--  the div responsible for dividing the main body into two grids, namely the dashboard grid and the schedule div-->
+        <div class="main-grid">
+          <!--  the dashboard -->
+          <div class="dashboard-div">
+            <!--  the div containing the balance div, group info div and the create group -->
+            <div class="generalgroup-div">
+              <!-- the balance div -->
 
-      <div class="main-grid">
-
-              <!--  the dashboard -->
-        <div class="dashboard-div">
-
-         <!--  the div containing the balance div, group info div and the create group -->
-          <div class="generalgroup-div">
-
-             <!-- the balance div -->
-
-            <div class="group-div">
-                <img class="group-img" src="css/images/money.png" width="70px" height="70px">
+              <div class="group-div">
+                <img
+                  class="group-img"
+                  src="css/images/money.png"
+                  width="70px"
+                  height="70px"
+                />
                 <h2>Task</h2>
                 <p>12</p>
-                <div style="text-align: center;"><button class="groupdiv-btn">View all</button></div>
-            </div>
-                <!-- End of the balance div -->
+                <div style="text-align: center">
+                  <button class="groupdiv-btn">View all</button>
+                </div>
+              </div>
+              <!-- End of the balance div -->
 
-                <!-- the join group div -->
+              <!-- the join group div -->
 
-          <div class="group2-div">
-            <img class="group-img" src="css/images/collaborate.png" width="80px" height="80px">
+              <div class="group2-div">
+                <img
+                  class="group-img"
+                  src="css/images/collaborate.png"
+                  width="80px"
+                  height="80px"
+                />
                 <h2>Courses</h2>
                 <p>10</p>
-                <div style="text-align: center;"><button id="join" class="groupdiv-btn">View all</button></div>
-          </div>
-                <!--  End of the join group div -->
+                <div style="text-align: center">
+                  <button id="join" class="groupdiv-btn">View all</button>
+                </div>
+              </div>
+              <!--  End of the join group div -->
 
-                <!-- the create group div -->
-          <div class="group3-div">
-            <img class="group-img" src="css/images/create.png" width="70px" height="70px">
+              <!-- the create group div -->
+              <div class="group3-div">
+                <img
+                  class="group-img"
+                  src="css/images/create.png"
+                  width="70px"
+                  height="70px"
+                />
                 <h2>Documents</h2>
                 <p>09</p>
-                <div style="text-align: center;"><button id="create" class="groupdiv-btn">View all</button></div>
-          </div>
-               <!-- End of the create group div -->
-          </div>
-                <!-- End of the div containing the balance div, group info div and the create group -->
-
-                <!-- the information div containing the activity track cadre div and transaction history -->
-
-          <div class="info-div">
-
-             <!--  the div containing the activity track and recent blog track -->
-
-            <div class="support-div">
-
-              <!--  the activity track div -->
-             
-              <div class="information">
-              <img class="info-img" src="css/images/activity.png" width="110px" height="140px">
-                <h4>Task Track</h4>
-                <p>Track of all tasks</p>
-                <div class="info-bottom">
-                  <ul>
-                    <li><h4>3</h4><p>To Do</p></li>
-                    <li><h4>4</h4><p>In Progress</p></li>
-                    <li><h4>9</h4><p>Done</p></li>
-                  </ul>
+                <div style="text-align: center">
+                  <button id="create" class="groupdiv-btn">View all</button>
                 </div>
+              </div>
+              <!-- End of the create group div -->
             </div>
+            <!-- End of the div containing the balance div, group info div and the create group -->
+
+            <!-- the information div containing the activity track cadre div and transaction history -->
+
+            <div class="info-div">
+              <!--  the div containing the activity track and recent blog track -->
+
+              <div class="support-div">
+                <!--  the activity track div -->
+
+                <div class="information">
+                  <img
+                    class="info-img"
+                    src="css/images/activity.png"
+                    width="110px"
+                    height="140px"
+                  />
+                  <h4>Task Track</h4>
+                  <p>Track of all tasks</p>
+                  <div class="info-bottom">
+                    <ul>
+                      <li>
+                        <h4>3</h4>
+                        <p>To Do</p>
+                      </li>
+                      <li>
+                        <h4>4</h4>
+                        <p>In Progress</p>
+                      </li>
+                      <li>
+                        <h4>9</h4>
+                        <p>Done</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 <!-- End of the activity track div -->
 
                 <!-- the recent blog div -->
 
-            <div class="blog-div">
-              <h4>Recent Posts</h4>
-              <p>Check out our recent blog posts</p>
-              <button>Visit</button>
-            </div>
-                 <!-- End of the recent blog div -->
+                <div class="blog-div">
+                  <h4>Recent Posts</h4>
+                  <p>Check out our recent blog posts</p>
+                  <button>Visit</button>
+                </div>
+                <!-- End of the recent blog div -->
+              </div>
+              <!--  End of the div containing the activity track and recent blog track -->
 
-            </div>
-               <!--  End of the div containing the activity track and recent blog track -->
+              <!-- the cardre div -->
 
-               <!-- the cardre div -->
+              <div class="cadres">
+                <div class="card-head">
+                  <h3>Performance metrics for on time task delivery</h3>
+                </div>
+                <div class="card-bodi">
+                  <div id="gaugeChart"></div>
 
-            <div class="cadres">
-              <div class="card-head">
-              <h3>Performance metrics for on time task delivery</h3>
-            </div>
-            <div class="card-bodi">
-
-              <div id="gaugeChart"></div>
-
-               <!-- <div class="customer">
+                  <!-- <div class="customer">
                  <div class="infos">
                    <div class="icon"><i class="las la-school"></i></div>
                    <div>
@@ -200,7 +253,7 @@
                  <div class="course-title-div"><p>Introduction to engineering management</p></div>
               </div> -->
 
-               <!-- <div class="customer">
+                  <!-- <div class="customer">
                  <div class="infos">
                    <img src="css/images/silver.jpg" width="40px" height="40px" alt="">
                    <div>
@@ -232,17 +285,15 @@
                  </div>
                   <button>View</button>
                </div> -->
-
-            </div>
-          </div>
+                </div>
+              </div>
               <!-- End of the cadre div -->
-
-        </div>
+            </div>
             <!--  End of the information div containing the activity track cadre div and transaction history -->
 
             <!-- the transaction history div -->
-        
-        <!-- <div class="history">
+
+            <!-- <div class="history">
           <h3>Transaction History</h3>
 
             <div class="history-div">
@@ -316,17 +367,17 @@
                </div>
 
            </div> -->
-           <div class="semester">
-             <div class="semester-item one">
+            <div class="semester">
+              <div class="semester-item one">
                 <h2 class="semester-heading">Semester Analysis</h2>
                 <div class="semester-info">
-                  <div class="semester-info-item one"> 
+                  <div class="semester-info-item one">
                     <div><i class="las la-play"></i></div>
                     <h4>Semester Start</h4>
                     <h3>1 Feb 2022</h3>
                   </div>
-                  <div class="semester-info-item two"> 
-                   <div><i class="las la-calendar-times"></i></div>
+                  <div class="semester-info-item two">
+                    <div><i class="las la-calendar-times"></i></div>
                     <h4>Semester End</h4>
                     <h3>13 Jul 2022</h3>
                   </div>
@@ -336,10 +387,10 @@
                     <h3>132 days</h3>
                   </div>
                 </div>
-             </div>
+              </div>
 
-             <div class="semester-item two">
-               <!-- <img src="css/images/education.png">
+              <div class="semester-item two">
+                <!-- <img src="css/images/education.png">
                <div class="semester-completion">
                  <div class="child">
                    <h5>Semester completion</h5>
@@ -351,71 +402,74 @@
                   </div>
                 </div>
                </div> -->
-               <h2>Semester Completion</h2>
-               <div class="progress-bar-div">
+                <h2>Semester Completion</h2>
+                <div class="progress-bar-div">
                   <div>
                     <p>85% Completion</p>
                     <div class="semester-progress-bar">
                       <div class="inner-progress-bar"></div>
                     </div>
                   </div>
-               </div>
-             </div>
-           </div>
-              <!-- End of the transaction history div -->
-
-         </div>
-                  <!-- End of the dashboard -->
-
-                  <!-- The schedule div containing the chart div and the group div -->
-
-        <div class="schedule-div">
-
-          <!-- The chart div -->
-
-          <div class="schedule">
-          <div class="chart-container">
-            <div class="chart">
-
-              <div class="chart-column chart-time">
-                <diV class="chart-period">Time</diV><div>07:00 am</div><div>08:00 am</div><div>09:00 am</div><div>10:00 am</div><div>11:00 am</div><div>12:00 am</div><div>01:00 am</div><div>02:00 am</div>
-                <div>03:00 am</div><div>04:00 am</div><div>05:00 am</div><div>06:00 am</div>
+                </div>
               </div>
-          
-              <div class="chart-column chart-lines">
-                <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span><span></span><span></span>
-              </div>
-          
-              <div class="chart-column chart-content">
-                <div class="chart-row-item chart-heading"><h3>Class Schedule for today (Mon)</h3></div>
-                <div class="chart-row-bars chart-item-sun">
-                  <div class="chart-text-container">
-                    <p>pay &#8358; 2,500 to Attainable group</p>
+            </div>
+            <!-- End of the transaction history div -->
+          </div>
+          <!-- End of the dashboard -->
+
+          <!-- The schedule div containing the chart div and the group div -->
+
+          <div class="schedule-div">
+            <!-- The chart div -->
+
+            <div class="schedule">
+              <div class="chart-container">
+                <div class="chart">
+                  <div class="chart-column chart-time">
+                    <div class="chart-period">Time</div>
+                    <div>07:00 am</div>
+                    <div>08:00 am</div>
+                    <div>09:00 am</div>
+                    <div>10:00 am</div>
+                    <div>11:00 am</div>
+                    <div>12:00 am</div>
+                    <div>01:00 am</div>
+                    <div>02:00 am</div>
+                    <div>03:00 am</div>
+                    <div>04:00 am</div>
+                    <div>05:00 am</div>
+                    <div>06:00 am</div>
+                  </div>
+
+                  <div class="chart-column chart-lines">
+                    <span></span><span></span><span></span><span></span
+                    ><span></span><span></span><span></span> <span></span
+                    ><span></span><span></span><span></span><span></span
+                    ><span></span>
+                  </div>
+
+                  <div class="chart-column chart-content">
+                    <div class="chart-row-item chart-heading">
+                      <h3>Class Schedule for today (Mon)</h3>
+                    </div>
+                    <div class="chart-row-bars chart-item-sun">
+                      <div class="chart-text-container">
+                        <p>pay &#8358; 2,500 to Attainable group</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-          
             </div>
-          
-  
-     </div>
-          </div>
             <!-- End of The chart div -->
-
+          </div>
+          <!-- End of The schedule div containing the chart div and the group div-->
         </div>
-           <!-- End of The schedule div containing the chart div and the group div-->
-
-      </div>
-          <!--  End of the div responsible for dividing the main body into grid, namely the dashboard grid and the schedule div -->
-
-    </main>
-          <!-- End of the main body -->
-
-  </div>
-     <!--  End of main content -->
-   <script type="module" src="./js/guage-chart.js"></script>  
-   <script nomodule src="./js/guage-chart.js"></script>  
-
-</body>
+        <!--  End of the div responsible for dividing the main body into grid, namely the dashboard grid and the schedule div -->
+      </main>
+      <!-- End of the main body -->
+    </div>
+    <!--  End of main content -->
+    <script type="text/javascript" src="./js/guage-chart.js"></script>
+  </body>
 </html>

@@ -1,0 +1,72 @@
+.calender {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.calender .cld-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.cld-datetime .today {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cld-datetime {
+  margin-bottom: 1rem;
+}
+
+.bigger-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.smaller-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+circle {
+  fill: none;
+  stroke-width: 8px;
+}
+
+.smaller-svg circle {
+  /* stroke-dasharray: 323; */
+  stroke-dasharray: 323;
+  stroke-dashoffset: 110;
+  stroke: #ae56d3;
+}
+
+.bigger-svg circle {
+  /* stroke-dasharray: 474; */
+  stroke-dasharray: 474;
+  stroke-dashoffset: 128;
+  stroke: #56d397;
+}
+
+/* .outer {
+  box-shadow: 6px 6px 10px -1px rgba(136, 132, 132, 0.7),
+    -6px -6px 10px -1px rgba(136, 132, 132, 0.7);
+}
+
+.inner {
+  box-shadow: inset 4px 4px 6px -1px rgba(136, 132, 132, 0.7),
+    inset -4px -4px 6px -1px rgba(136, 132, 132, 0.7),
+    -0.5px -0.5px 0px rgba(136, 132, 132, 0.7),
+    0.5px 0.5px 0px rgba(136, 132, 132, 0.7),
+    0px 12px 10px -10px rgba(136, 132, 132, 0.7);
+} */
+
+.sem-end-list li:first-child {
+  color: #56d397;
+}
+
+.sem-end-list li:last-child {
+  color: #ae56d3;
+}
