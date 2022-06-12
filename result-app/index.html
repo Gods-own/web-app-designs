@@ -64,13 +64,16 @@
     <style></style>
   </head>
   <body>
-    <nav
+    <!-- <nav
       class="fixed shadow-innerdark -left-64 xsm:-left-72 sm:-left-80 md:left-0 md:block w-64 xsm:w-72 sm:w-80 lg:w-80 md:w-24 min-h-screen z-50"
+    > -->
+    <nav
+      class="bg-white fixed shadow-innerdark -left-64 md:left-0 md:block w-64 md:w-24 lg:w-64 min-h-screen z-50"
     >
       <div class="px-4 py-2">
         <div class="flex items-center">
-          <img src="css/images/logo-2.png" class="w-100" />
-          <h2 class="font-bold text-2xl hidden lg:block">Elim Watt</h2>
+          <img src="css/images/logo-2.png" class="w-28" />
+          <h2 class="font-bold text-2xl block md:hidden lg:block">Elim Watt</h2>
         </div>
         <ul class="mt-5">
           <li
@@ -133,7 +136,7 @@
       </div>
     </nav>
 
-    <div class="ml-0 md:ml-24 lg:ml-80 min-h-screen">
+    <div class="ml-0 md:ml-24 lg:ml-64 min-h-screen">
       <header class="shadow-md bg-white p-2 flex justify-between">
         <div class="flex items-center">
           <img src="css/images/profile-2.jpg" class="w-12 h-12 rounded-full" />
@@ -340,62 +343,63 @@
           <aside class="">
             <div class="calender shadow-md xl:block hidden"></div>
 
-            <div class="bg-slate-100 mt-6 pt-6 w-full shadow-md p-2">
-              <div class="flex flex-wrap mb-2">
+            <div>
+              <div class="bg-slate-100 mt-6 pt-6 w-full shadow-md p-2">
+                <div class="flex flex-wrap mb-2">
+                  <div
+                    class="w-10 h-10 mr-3 rounded-full border-dashed border-2 border-yellow-500"
+                  ></div>
+                  <div class="text-center">
+                    <h3 class="text-xl font-bold">Percentage Completion</h3>
+                    <p>of Session and Term</p>
+                  </div>
+                </div>
                 <div
-                  class="w-10 h-10 mr-3 rounded-full border-dashed border-2 border-yellow-500"
-                ></div>
-                <div class="text-center">
-                  <h3 class="text-xl font-bold">Percentage Completion</h3>
-                  <p>of Session and Term</p>
-                </div>
-              </div>
-              <div
-                class="bg-white w-full grid grid-cols-semesterGrid items-center"
-              >
-                <div class="relative w-full h-56">
-                  <div
-                    class="bg-slate-100 outer w-40 h-40 rounded-full p-2 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                  >
-                    <div class="bg-white inner w-36 h-36 rounded-full"></div>
-                    <svg
-                      class="bigger-svg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1.1"
-                      width="160px"
-                      height="160px"
+                  class="bg-white w-full grid grid-cols-semesterGrid items-center"
+                >
+                  <div class="relative w-full h-56">
+                    <div
+                      class="bg-slate-100 outer w-40 h-40 rounded-full p-2 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                     >
-                      <defs>
-                        <linearGradient id="GradientColor">
-                          <stop offset="0%" stop-color="#e91e63" />
-                          <stop offset="100%" stop-color="#673ab7" />
-                        </linearGradient>
-                      </defs>
-                      <circle cx="80" cy="80" r="76" stroke-linecap="round" />
-                    </svg>
-                  </div>
-                  <div
-                    class="bg-slate-100 outer w-28 h-28 rounded-full p-2 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
-                  >
-                    <div class="bg-white inner w-24 h-24 rounded-full"></div>
-                    <svg
-                      class="smaller-svg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      version="1.1"
-                      width="128px"
-                      height="128px"
+                      <div class="bg-white inner w-36 h-36 rounded-full"></div>
+                      <svg
+                        class="bigger-svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        width="160px"
+                        height="160px"
+                      >
+                        <defs>
+                          <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                          </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="76" stroke-linecap="round" />
+                      </svg>
+                    </div>
+                    <div
+                      class="bg-slate-100 outer w-28 h-28 rounded-full p-2 absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
                     >
-                      <defs>
-                        <linearGradient id="GradientColor">
-                          <stop offset="0%" stop-color="#e91e63" />
-                          <stop offset="100%" stop-color="#673ab7" />
-                        </linearGradient>
-                      </defs>
-                      <circle cx="56" cy="56" r="52" stroke-linecap="round" />
-                    </svg>
+                      <div class="bg-white inner w-24 h-24 rounded-full"></div>
+                      <svg
+                        class="smaller-svg"
+                        xmlns="http://www.w3.org/2000/svg"
+                        version="1.1"
+                        width="128px"
+                        height="128px"
+                      >
+                        <defs>
+                          <linearGradient id="GradientColor">
+                            <stop offset="0%" stop-color="#e91e63" />
+                            <stop offset="100%" stop-color="#673ab7" />
+                          </linearGradient>
+                        </defs>
+                        <circle cx="56" cy="56" r="52" stroke-linecap="round" />
+                      </svg>
+                    </div>
                   </div>
-                </div>
-                <!-- <div>
+                  <!-- <div>
                     <div class="w-40 h-40">
                   <div></div>
                 </div>
@@ -404,14 +408,17 @@
                 </div>
                 </div> -->
 
-                <div>
-                  <h2 class="text-2xl font-bold mb-3">gj j,jk.</h2>
-                  <ul class="list-square sem-end-list">
-                    <li>Semester 73%</li>
-                    <li>Term 65%</li>
-                  </ul>
+                  <div>
+                    <h2 class="text-2xl font-bold mb-3">gj j,jk.</h2>
+                    <ul class="list-square sem-end-list">
+                      <li>Semester 73%</li>
+                      <li>Term 65%</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
+
+              <div></div>
             </div>
 
             <div class="bg-slate-100 mt-6 py-4 px-3 w-full">
@@ -502,17 +509,23 @@
       window.addEventListener(
         "resize",
         debounce(function (event) {
-          if (
-            768 > document.body.clientWidth &&
-            document.body.clientWidth >= 640
-          ) {
-            nav.style.left = "-320px";
-          } else if (
-            640 > document.body.clientWidth &&
-            document.body.clientWidth >= 415
-          ) {
-            nav.style.left = "-288px";
-          } else if (415 > document.body.clientWidth) {
+          // if (
+          //   768 > document.body.clientWidth &&
+          //   document.body.clientWidth >= 640
+          // ) {
+          //   nav.style.left = "-320px";
+          // } else if (
+          //   640 > document.body.clientWidth &&
+          //   document.body.clientWidth >= 415
+          // ) {
+          //   nav.style.left = "-288px";
+          // } else if (415 > document.body.clientWidth) {
+          //   nav.style.left = "-256px";
+          // } else {
+          //   nav.style.left = "0px";
+          // }
+
+          if (document.body.clientWidth < 768) {
             nav.style.left = "-256px";
           } else {
             nav.style.left = "0px";
